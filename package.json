@@ -1,0 +1,30 @@
+{
+  "name": "whatsapp_token_generator",
+  "version": "1.0.0",
+  "description": "authControllers for users,resellers,and admins using email.\r compares the hashed password using bcrypt.compare\r if successful,generates a JWT token with user'ID and role.\r Example Flow:\r User submits login form in the frontend.\r API endpoint /api/auth/login is called.\r Backend verifies credentials and returns a token.\r Frontend stores the token in localStorage for future API calls.\r Interaction:\r Uses the User model to fetch user details.\r Relies on the jsonwebtoken library to issue tokens.\r Validates requests via the frontend login component.\r 2. keyController.js\r Purpose:\r Manages WhatsApp keys for resellers and users.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  }
+}
