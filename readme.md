@@ -266,4 +266,4 @@ This backend structure ensures:
 Role-based security: Only authorized users can access specific endpoints.
 Scalability: Well-structured models and modular controllers.
 Monitoring: Logging with Datadog for performance and error tracking.
-Let me know if you'd like further details on specific flows or modules! 🚀
+
